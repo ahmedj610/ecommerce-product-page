@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Kumbh+Sans:100,200,300,regular,500,600,700,800,900');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+  
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    /* overflow: hidden; */
+    user-select: none;
+}
+
+/* Header Starts */
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #9fa0a26d;
+}
+
+/* Header Left Side Starts */
+
+.links ul {
+    list-style: none;
+    display: flex;
+}
+
+.links ul a {
+    text-decoration: none;
+    color: hsl(219, 9%, 45%);
+    margin-left: 26px;
+    padding-bottom: 40px;
+}
+
+.links ul a:hover {
+    border-bottom: 3px solid hsl(26, 100%, 55%);
+}
+
+.header-container--l {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Header Left Side Ends */
+
+/* Header Right Side Starts */
+
+.header-container--r {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container--r .cart img {
+    cursor: pointer;
+}
+
+.header-container--r .avatar img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Header Right Side Ends */
+
+
+/* Header Ends */
+
+
+/* Content Starts */
+
+section {
+    min-height: 550px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 40px;
+    gap: 0;
+}
+
+.display-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.img-list img {
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    /* margin-top: 20px; */
+}
+
+.img-list {
+    margin-top: -90px;
+}
+
+.thumb-1, .thumb-2, .thumb-3 {
+    margin-right: 25px;
+}
+
+.description {
+    /* margin-left: 100px; */
+    padding-top: 50px;
+}
+
+.p1 {
+    color: hsl(26, 100%, 55%);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.p2 {
+    color: hsl(219, 9%, 45%);
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.price .h2 {
+    letter-spacing: 1.5px;
+}
+
+.price .h2::after {
+    content: '50%';
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 15px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: hsl(26, 100%, 55%);
+    background-color: hsl(25, 100%, 94%);
+}
+
+.price .p3 {
+    color: hsl(220, 14%, 75%);
+    font-weight: 700;
+    text-decoration: line-through;
+}
+
+.price {
+    margin-bottom: 25px;
+}
+
+.add {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quantity {
+    font-weight: 700;
+    background-color: #f7f8fd;
+    display: flex;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.no {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.minus, .plus {
+    padding: 10px 20px;
+    font-size: 24px;
+    color: hsl(26, 100%, 55%);
+    cursor: pointer;
+}
+
+.add-to-cart {
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    font-weight: 700;
+    height: 100%;
+    font-size: 18px;
+    padding: 15px 60px;
+    border-radius: 10px;
+    box-shadow: -1px 18px 28px -14px rgba(255,125,26,0.6);
+    cursor: pointer;
+    user-select: none;
+}
+
+.msg {
+    display: none;
+}
+
+/* Content Ends */
+
+@media(max-width: 760px){
+    .container {
+        display: none;
+    }
+
+    .msg {
+        display: block;
+        text-align: center;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: 100;
+    }
+}
+@media(max-width: 1275px){
+    .container {
+        display: none;
+    }
+
+    .msg {
+        display: block;
+        text-align: center;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: 100;
+    }    
+}
+
+
+
